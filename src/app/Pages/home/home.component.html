@@ -1,0 +1,21 @@
+<main class="container">
+    <app-header></app-header>
+    
+    <!-- <section class="container__">
+    </section> -->
+    
+    <section class="cards_container">
+        <div class="wave"></div>
+        @for(item of data;track item){
+            <app-card [data]="item"></app-card>
+        }
+    </section>
+
+
+    <div id="welcome_div">
+        <p class="title en_">Welcome to our platforme</p>
+        <p class="title ar_">مرحبا بكم في منصتنا</p>
+        <button class="btn" (click)="hide_animation($event)" >Acceder</button>
+    </div>
+
+</main>
